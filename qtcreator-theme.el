@@ -21,6 +21,7 @@
 ;;
 ;;; Code:
 
+
 (deftheme qtcreator
   "Mimics the Qt Creator's default color theme.")
 
@@ -29,7 +30,7 @@
   :group 'faces)
 
 (unless (>= emacs-major-version 24)
-  (error "qtcreator-theme requires Emacs 24 or later."))
+  (error "The qtcreator-theme requires Emacs 24 or later"))
 
 (let ((class '((class color) (min-colors 89)))
       (white "#FFFFFF") (black "#000000")
@@ -68,6 +69,7 @@
    `(font-lock-type-face ((,class (:foreground ,purple-0))))
    `(font-lock-preprocessor-face ((,class (:foreground ,blue-2))))
    `(font-lock-variable-name-face ((,class (:foreground ,orange-2))))
+   `(font-lock-warning-face ((,t (:foreground ,red-0 :weight bold))))
 
    ;; Link faces
    `(link ((,class (:underline t :foreground ,blue-1))))
@@ -76,31 +78,32 @@
    ;; Line-number-mode
    `(line-number ((,class (:inherit default :background ,bg-0 :foreground ,fg-0))))
    `(line-number-current-line ((t :inherit line-number :weight bold :foreground ,fg-1)))
-   )
 
-  ;; flycheck
-  `(flycheck-error
-    ((((supports :underline (:style wave)))
-      (:underline (:style wave :color ,red-0) :inherit unspecified))
-     (t (:foreground ,red-0 :weight bold :underline t))))
-  `(flycheck-warning
-    ((((supports :underline (:style wave)))
-      (:underline (:style wave :color ,orange-3) :inherit unspecified))
-     (t (:foreground ,orange-3 :weight bold :underline t))))
-  `(flycheck-info
-    ((((supports :underline (:style wave)))
-      (:underline (:style wave :color ,green-0) :inherit unspecified))
-     (t (:foreground ,green-0 :weight bold :underline t))))
-  `(flycheck-fringe-error ((t (:foreground ,red-0 :weight bold))))
-  `(flycheck-fringe-warning ((t (:foreground ,orange-3 :weight bold))))
-  `(flycheck-fringe-info ((t (:foreground ,green-0 :weight bold))))
+   ;; merlin
+   `(merlin-eldoc-occurrences-face((t (:inherit idle-highlight-face))))
+
+   ;; flycheck
+   `(flycheck-error
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,red-0) :inherit unspecified))
+      (t (:foreground ,red-0 :weight bold :underline t))))
+   `(flycheck-warning
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,orange-3) :inherit unspecified))
+      (t (:foreground ,orange-3 :weight bold :underline t))))
+   `(flycheck-info
+     ((((supports :underline (:style wave)))
+       (:underline (:style wave :color ,green-0) :inherit unspecified))
+      (t (:foreground ,green-0 :weight bold :underline t))))
+   `(flycheck-fringe-error ((t (:foreground ,red-0 :weight bold))))
+   `(flycheck-fringe-warning ((t (:foreground ,orange-3 :weight bold))))
+   `(flycheck-fringe-info ((t (:foreground ,green-0 :weight bold))))
+
+   )
 
   (custom-theme-set-variables
    'qtcreator
-   ;; `(ansi-color-names-vector [,alum-6 ,red-3 ,cham-3 ,butter-3
-   ;;      			      ,blue-3 ,plum-3 ,blue-1 ,alum-1])
-   `(git-gutter:modified-sign "✱"))
-  )
+   `(git-gutter:modified-sign "✱")))
 
 ;;----------------------------------------------------------------------------
 
