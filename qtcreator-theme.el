@@ -1,4 +1,4 @@
-;;; qtcreator-theme.el --- A color theme that mimics the default theme of the Qt Creator IDE
+;;; qtcreator-theme.el --- A color theme that mimics Qt Creator IDE
 ;;
 ;; Copyright (C) 2020 Lesley Lai
 ;;
@@ -43,8 +43,7 @@
       (green-0 "#008000") (green-1 "#B4EDB3")
       (blue-0 "#2D83DE") (blue-1 "#0000FE") (blue-2 "#000080")
       (cyan-1 "#00677C")
-      (purple-0 "#800080")
-      )
+      (purple-0 "#800080"))
 
   (custom-theme-set-faces
    'qtcreator
@@ -97,9 +96,7 @@
       (t (:foreground ,green-0 :weight bold :underline t))))
    `(flycheck-fringe-error ((t (:foreground ,red-0 :weight bold))))
    `(flycheck-fringe-warning ((t (:foreground ,orange-3 :weight bold))))
-   `(flycheck-fringe-info ((t (:foreground ,green-0 :weight bold))))
-
-   )
+   `(flycheck-fringe-info ((t (:foreground ,green-0 :weight bold)))))
 
   (custom-theme-set-variables
    'qtcreator
@@ -115,8 +112,5 @@
    (file-name-directory load-file-name)))
 (provide-theme 'qtcreator)
 
-;; Local Variables:
-;; no-byte-compile: t
-;; End:
-
+(provide 'qtcreator-theme)
 ;;; qtcreator-theme.el ends here
