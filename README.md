@@ -1,5 +1,12 @@
 # Emacs Qt Creator Theme
 An Emacs color theme that mimics the default theme of the Qt Creator IDE.
 
-## Sample
-![Screenshot for C++](https://raw.githubusercontent.com/LesleyLai/emacs-qtcreator-theme/master/screenshot-cpp.png "C++")
+## Samples
+### Emacs Lisp
+![Screenshot for Emacs Lisp](https://raw.githubusercontent.com/LesleyLai/emacs-qtcreator-theme/master/screenshot-elisp.png "Screenshot for Emacs Lisp")
+
+### [C++](https://isocpp.org/)
+![Screenshot for C++](https://raw.githubusercontent.com/LesleyLai/emacs-qtcreator-theme/master/screenshot-cpp.png "Screenshot for C++")
+
+### [Elm](https://elm-lang.org/)
+![Screenshot for Elm](https://raw.githubusercontent.com/LesleyLai/emacs-qtcreator-theme/master/screenshot-elm.png "Screenshot for Elm")
