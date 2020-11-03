@@ -75,7 +75,7 @@
    `(font-lock-comment-delimiter-face((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face ((,t (:foreground ,blue-2))))
    `(font-lock-doc-face ((,class (:foreground ,blue-2))))
-   `(font-lock-function-name-face ((,class (:foreground ,cyan-1))))
+   `(font-lock-function-name-face ((,class (:foreground ,orange-2))))
    `(font-lock-keyword-face ((,class (:foreground ,yellow-1))))
    `(font-lock-string-face ((,class (:foreground ,green-0))))
    `(font-lock-type-face ((,class (:foreground ,purple-0))))
@@ -112,7 +112,14 @@
    `(flycheck-fringe-info ((t (:foreground ,green-0 :weight bold))))
 
    ;; org-mode
-   `(org-code ((t (:foreground ,black :background ,white :box (:line-width 2 :color "grey75")))))
+   `(org-code
+     ((t (:foreground ,black :background ,white :box (:line-width 2 :color "grey75")))))
+   `(org-block
+     ((t (:foreground ,black :background "#F8FBFD"))))
+   `(org-block-begin-line
+     ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
+   `(org-block-end-line
+     ((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
 
    ;; Highlight doxygen mode
    `(highlight-doxygen-comment ((t (:inherit font-lock-doc-face))))
