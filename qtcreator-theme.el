@@ -128,7 +128,8 @@
 
   (custom-theme-set-variables
    'qtcreator
-   `(git-gutter:modified-sign "✱")))
+   `(git-gutter:modified-sign "✱")
+   `(org-hide-emphasis-markers t)))
 
 ;;----------------------------------------------------------------------------
 
