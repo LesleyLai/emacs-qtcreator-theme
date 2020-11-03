@@ -111,9 +111,12 @@
    `(flycheck-fringe-warning ((t (:foreground ,orange-3 :weight bold))))
    `(flycheck-fringe-info ((t (:foreground ,green-0 :weight bold))))
 
-  ;; Highlight doxygen mode
-  `(highlight-doxygen-comment ((t (:inherit font-lock-doc-face))))
-  `(highlight-doxygen-command ((t (:foreground ,blue-1 :weight bold)))))
+   ;; org-mode
+   `(org-code ((t (:foreground ,black :background ,white :box (:line-width 2 :color "grey75")))))
+
+   ;; Highlight doxygen mode
+   `(highlight-doxygen-comment ((t (:inherit font-lock-doc-face))))
+   `(highlight-doxygen-command ((t (:foreground ,blue-1 :weight bold)))))
 
 
   (custom-theme-set-variables
