@@ -47,8 +47,8 @@
 (let ((class '((class color) (min-colors 89)))
       (white "#FFFFFF") (black "#000000")
 
-      (bg-0 "#EFEFEF")
-      (fg-0 "#ABABAB") (fg-1 "#888888")
+      (bg-0 "#EFEFEF") (bg-1 "#e7e7e7") (bg-2 "#dfdfdf") (bg-3 "#c6c7c7")
+      (fg-0 "#ABABAB") (fg-1 "#888888") (fg-2 "#383a42") (fg-3 "#1b2229")
       (red-0 "#FE0000")
       (orange-1 "#ce5c00") (orange-2 "#b35000") (orange-3 "#EFC846")
       (yellow-0 "#FEEE0B") (yellow-1 "#808000")
@@ -82,6 +82,10 @@
    `(font-lock-preprocessor-face ((,class (:foreground ,blue-2))))
    `(font-lock-variable-name-face ((,class (:foreground ,orange-2))))
    `(font-lock-warning-face ((,t (:foreground ,red-0 :weight bold))))
+
+   ;; Modeline
+   `(mode-line ((t (:foreground , black :background , bg-2))))
+   `(mode-line-inactive ((t (:foreground , fg-3 :background , bg-3))))
 
    ;; Link faces
    `(link ((,class (:underline t :foreground ,blue-1))))
