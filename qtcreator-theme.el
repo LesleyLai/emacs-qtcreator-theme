@@ -124,6 +124,7 @@
      ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
    `(org-block-end-line
      ((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
+   `(org-ellipsis ((t (:foreground ,fg-2 :underline nil))))
 
    ;; Highlight doxygen mode
    `(highlight-doxygen-comment ((t (:inherit font-lock-doc-face))))
@@ -133,7 +134,8 @@
   (custom-theme-set-variables
    'qtcreator
    `(git-gutter:modified-sign "✱")
-   `(org-hide-emphasis-markers t)))
+   `(org-hide-emphasis-markers t)
+   `(org-ellipsis " ▾")))
 
 ;;----------------------------------------------------------------------------
 
