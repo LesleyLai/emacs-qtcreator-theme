@@ -128,14 +128,21 @@
 
    ;; Highlight doxygen mode
    `(highlight-doxygen-comment ((t (:inherit font-lock-doc-face))))
-   `(highlight-doxygen-command ((t (:foreground ,blue-1 :weight bold)))))
+   `(highlight-doxygen-command ((t (:foreground ,blue-1 :weight bold))))
 
+  `(vterm-color-black ((t (:foreground "#16161C" :background "#1A1C23"))))
+  `(vterm-color-blue ((t (:foreground "#26BBD9" :background "#3FC6DE"))))
+  `(vterm-color-cyan ((t (:foreground "#59E3E3" :background "#6BE6E6"))))
+  `(vterm-color-green ((t (:foreground "#29D398" :background "#3FDAA4"))))
+  `(vterm-color-magenta ((t (:foreground "#EE64AE" :background "#F075B7"))))
+  `(vterm-color-red ((t (:foreground "#E95678" :background "#EC6A88"))))
+  `(vterm-color-white ((t (:foreground "#FDF0ED" :background "#FADAD1"))))))
 
   (custom-theme-set-variables
    'qtcreator
    `(git-gutter:modified-sign "✱")
    `(org-hide-emphasis-markers t)
-   `(org-ellipsis " ▾")))
+   `(org-ellipsis " ▾"))
 
 ;;----------------------------------------------------------------------------
 
