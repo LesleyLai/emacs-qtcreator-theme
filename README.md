@@ -1,4 +1,7 @@
 # Emacs Qt Creator Theme
+
+[![MELPA](https://melpa.org/packages/qtcreator-theme-badge.svg)](https://melpa.org/#/qtcreator-theme)
+
 An Emacs color theme that mimics the default theme of the Qt Creator IDE.
 
 ## Samples
