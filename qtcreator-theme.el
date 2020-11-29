@@ -53,7 +53,7 @@
       (orange-1 "#ce5c00") (orange-2 "#b35000") (orange-3 "#EFC846")
       (yellow-0 "#FEEE0B") (yellow-1 "#808000")
       (green-0 "#008000") (green-1 "#B4EDB3")
-      (blue-0 "#2D83DE") (blue-1 "#0000FE") (blue-2 "#000080")
+      (blue-0 "#2D83DE") (blue-1 "#0000FE") (blue-2 "#000080") (blue-3 "#EAEAFF")
       (cyan-1 "#00677C")
       (purple-0 "#800080"))
 
@@ -121,10 +121,14 @@
    `(org-block
      ((t (:foreground ,black :background "#F8FBFD"))))
    `(org-block-begin-line
-     ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
+     ((t (:underline "#A7A6AA" :foreground "#008ED1" :background ,blue-3))))
    `(org-block-end-line
-     ((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
+     ((t (:overline "#A7A6AA" :foreground "#008ED1" :background ,blue-3))))
    `(org-ellipsis ((t (:foreground ,fg-2 :underline nil))))
+
+   ;; org-agenda
+   `(org-agenda-structure ((t (:foreground ,blue-2 :weight extra-bold))))
+   `(org-super-agenda-header ((t (:inherit org-agenda-structure :background ,blue-3 :overline t))))
 
    ;; Highlight doxygen mode
    `(highlight-doxygen-comment ((t (:inherit font-lock-doc-face))))
