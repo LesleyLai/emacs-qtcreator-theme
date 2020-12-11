@@ -140,7 +140,10 @@
   `(vterm-color-green ((t (:foreground "#29D398" :background "#3FDAA4"))))
   `(vterm-color-magenta ((t (:foreground "#EE64AE" :background "#F075B7"))))
   `(vterm-color-red ((t (:foreground "#E95678" :background "#EC6A88"))))
-  `(vterm-color-white ((t (:foreground "#FDF0ED" :background "#FADAD1"))))))
+  `(vterm-color-white ((t (:foreground "#FDF0ED" :background "#FADAD1"))))
+
+  ;; lsp-mode
+  `(lsp-ui-sideline-code-action ((t (:foreground ,green-0))))))
 
   (custom-theme-set-variables
    'qtcreator
