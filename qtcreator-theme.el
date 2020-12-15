@@ -95,6 +95,9 @@
    `(line-number ((,class (:inherit default :background ,bg-0 :foreground ,fg-0))))
    `(line-number-current-line ((t :inherit line-number :weight bold :foreground ,fg-1)))
 
+   ;; fill-column-indicator
+   `(fill-column-indicator ((,class (:foreground ,bg-2))))
+
    ;; merlin
    `(merlin-eldoc-occurrences-face((t (:inherit idle-highlight-face))))
 
